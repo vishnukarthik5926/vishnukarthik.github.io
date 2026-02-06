@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the projects built by Ideas2RealityWithVK - from satellite simulators to AI assistants and IoT dashboards.">
+    <meta name="keywords" content="tech projects, Arduino, ESP32, STM32, AI projects, IoT, embedded systems">
+    <meta name="author" content="Ideas2RealityWithVK">
+
+    <title>Projects | Ideas2RealityWithVK</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Skip Link -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo" aria-label="Ideas2RealityWithVK Home">
+                <span class="nav__logo-icon">◆</span>
+                <span>I2R</span>
+            </a>
+
+            <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+
+            <ul class="nav__menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav__link" role="menuitem">Home</a></li>
+                <li role="none"><a href="projects.html" class="nav__link nav__link--active" role="menuitem">Projects</a>
+                </li>
+                <li role="none"><a href="about.html" class="nav__link" role="menuitem">About</a></li>
+                <li role="none"><a href="resources.html" class="nav__link" role="menuitem">Resources</a></li>
+                <li role="none"><a href="contact.html" class="nav__link" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav__overlay" aria-hidden="true"></div>
+    </nav>
+
+    <main id="main">
+        <!-- Page Header -->
+        <header class="page-header">
+            <div class="container">
+                <h1><span class="gradient-text">My Projects</span></h1>
+                <p>A collection of things I've built while learning and experimenting with technology. Each project
+                    taught me something new.</p>
+            </div>
+        </header>
+
+        <!-- Projects Grid -->
+        <section class="section" aria-label="All projects">
+            <div class="container">
+                <div class="grid grid--2 reveal-stagger reveal-on-scroll">
+
+                    <!-- Project 1: CAMOS Satellite Simulator -->
+                    <article id="camos" class="card project-card">
+                        <div class="project-card__icon">🛰️</div>
+                        <h3 class="project-card__title">CAMOS Satellite Simulator</h3>
+                        <p class="project-card__description">
+                            A comprehensive dual-MCU simulation system for spacecraft operations.
+                            Built with STM32 as the main flight computer and ESP32 modules for
+                            satellite and ground station simulation. Features fault detection,
+                            isolation, and recovery (FDIR) logic, OLED telemetry display, and
+                            real-time serial communication between boards.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-badge">STM32</span>
+                            <span class="tech-badge">ESP32</span>
+                            <span class="tech-badge">C</span>
+                            <span class="tech-badge">MicroPython</span>
+                            <span class="tech-badge">MQTT</span>
+                            <span class="tech-badge">I2C</span>
+                        </div>
+                        <div class="project-card__footer">
+                            <span class="status-badge status-badge--progress">In Progress</span>
+                        </div>
+                        <div class="mt-lg">
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I
+                                Learned:</h4>
+                            <p style="font-size: 0.875rem; color: var(--text-dim);">
+                                Multi-board communication, UART/I2C protocols, FDIR design patterns,
+                                and the complexity of real-time embedded systems.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: TARA AI Assistant -->
+                    <article id="tara" class="card project-card">
+                        <div class="project-card__icon">🤖</div>
+                        <h3 class="project-card__title">TARA AI Assistant</h3>
+                        <p class="project-card__description">
+                            A multi-layout AI assistant with cyberpunk-themed interfaces.
+                            Features voice command recognition, modular skill system, and
+                            multiple dashboard layouts. Built with Python backend and a
+                            responsive web frontend that can switch between different
+                            visual themes dynamically.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML/CSS</span>
+                            <span class="tech-badge">WebSocket</span>
+                            <span class="tech-badge">STT/TTS</span>
+                        </div>
+                        <div class="project-card__footer">
+                            <span class="status-badge status-badge--progress">In Progress</span>
+                        </div>
+                        <div class="mt-lg">
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I
+                                Learned:</h4>
+                            <p style="font-size: 0.875rem; color: var(--text-dim);">
+                                Speech recognition integration, real-time websocket communication,
+                                modular architecture design, and creating immersive UI experiences.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Smart Home Dashboard -->
+                    <article id="smarthome" class="card project-card">
+                        <div class="project-card__icon">🏠</div>
+                        <h3 class="project-card__title">Smart Home Dashboard</h3>
+                        <p class="project-card__description">
+                            An ESP32-based sensor network with a real-time web dashboard
+                            for home monitoring. Collects temperature, humidity, and motion
+                            data from multiple nodes. Features device control capabilities
+                            and data logging for historical analysis.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-badge">ESP32</span>
+                            <span class="tech-badge">MQTT</span>
+                            <span class="tech-badge">HTML/CSS/JS</span>
+                            <span class="tech-badge">DHT22</span>
+                            <span class="tech-badge">PIR</span>
+                        </div>
+                        <div class="project-card__footer">
+                            <span class="status-badge status-badge--completed">Completed</span>
+                        </div>
+                        <div class="mt-lg">
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I
+                                Learned:</h4>
+                            <p style="font-size: 0.875rem; color: var(--text-dim);">
+                                MQTT protocol, sensor integration, real-time data visualization,
+                                and building responsive dashboards that work across devices.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Line Following Robot -->
+                    <article id="linefollower" class="card project-card">
+                        <div class="project-card__icon">🤖</div>
+                        <h3 class="project-card__title">Line Following Robot</h3>
+                        <p class="project-card__description">
+                            An autonomous robot built with Arduino that follows black lines
+                            on white surfaces. Uses an array of IR sensors for line detection
+                            and implements PID control for smooth cornering. Features
+                            adjustable speed and sensitivity settings.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-badge">Arduino</span>
+                            <span class="tech-badge">C++</span>
+                            <span class="tech-badge">IR Sensors</span>
+                            <span class="tech-badge">PID Control</span>
+                            <span class="tech-badge">L298N</span>
+                        </div>
+                        <div class="project-card__footer">
+                            <span class="status-badge status-badge--completed">Completed</span>
+                        </div>
+                        <div class="mt-lg">
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I
+                                Learned:</h4>
+                            <p style="font-size: 0.875rem; color: var(--text-dim);">
+                                PID control theory, motor driver circuits, sensor calibration,
+                                and the iterative process of tuning autonomous systems.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Weather Station -->
+                    <article id="weather" class="card project-card">
+                        <div class="project-card__icon">🌦️</div>
+                        <h3 class="project-card__title">Personal Weather Station</h3>
+                        <p class="project-card__description">
+                            A multi-sensor weather monitoring system that collects atmospheric
+                            data including temperature, humidity, pressure, and light levels.
+                            Data is logged to cloud platforms for remote access and historical
+                            trend analysis.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-badge">ESP32</span>
+                            <span class="tech-badge">BME280</span>
+                            <span class="tech-badge">BH1750</span>
+                            <span class="tech-badge">ThingSpeak</span>
+                            <span class="tech-badge">C++</span>
+                        </div>
+                        <div class="project-card__footer">
+                            <span class="status-badge status-badge--completed">Completed</span>
+                        </div>
+                        <div class="mt-lg">
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I
+                                Learned:</h4>
+                            <p style="font-size: 0.875rem; color: var(--text-dim);">
+                                Cloud IoT platforms, sensor fusion, data visualization APIs,
+                                and power management for always-on devices.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: This Portfolio -->
+                    <article id="portfolio" class="card project-card">
+                        <div class="project-card__icon">🌐</div>
+                        <h3 class="project-card__title">Ideas2RealityWithVK Website</h3>
+                        <p class="project-card__description">
+                            This very website you're browsing! A dark-mode first, futuristic
+                            portfolio built with vanilla HTML, CSS, and JavaScript. Features
+                            glassmorphism effects, smooth animations, and accessibility-first
+                            design. Hosted on GitHub Pages.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">GitHub Pages</span>
+                        </div>
+                        <div class="project-card__footer">
+                            <span class="status-badge status-badge--completed">Completed</span>
+                        </div>
+                        <div class="mt-lg">
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I
+                                Learned:</h4>
+                            <p style="font-size: 0.875rem; color: var(--text-dim);">
+                                Modern CSS techniques, web accessibility standards, performance
+                                optimization, and the importance of design systems.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Coming Section -->
+        <section class="cta-banner section" aria-labelledby="more-heading">
+            <div class="container">
+                <div class="cta-banner__content reveal-on-scroll">
+                    <h2 id="more-heading">More Projects Coming Soon</h2>
+                    <p>
+                        I'm constantly experimenting and building new things.
+                        Follow my journey to see what comes next!
+                    </p>
+                    <div class="flex flex--center flex--gap-md" style="flex-wrap: wrap;">
+                        <a href="https://youtube.com/@Ideas2RealityWithVK" class="btn btn--primary" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                            Subscribe on YouTube
+                        </a>
+                        <a href="https://github.com/Ideas2RealityWithVK" class="btn btn--secondary" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="nav__logo">
+                        <span class="nav__logo-icon">◆</span>
+                        <span>Ideas2RealityWithVK</span>
+                    </a>
+                    <p>Turning ideas into reality, one project at a time.</p>
+                </div>
+
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer__social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://youtube.com/@Ideas2RealityWithVK" class="social-link" aria-label="YouTube"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/ideas2reality_vk" class="social-link" aria-label="Instagram"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Ideas2RealityWithVK" class="social-link" aria-label="GitHub"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Ideas2RealityWithVK. All rights reserved.</p>
+                <p>Built with 💙 and lots of curiosity</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

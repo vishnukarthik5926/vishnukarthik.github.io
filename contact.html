@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with Ideas2RealityWithVK - for collaborations, questions, or just to say hi!">
+    <meta name="keywords" content="contact, collaborate, questions, tech help">
+    <meta name="author" content="Ideas2RealityWithVK">
+
+    <title>Contact | Ideas2RealityWithVK</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Skip Link -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo" aria-label="Ideas2RealityWithVK Home">
+                <span class="nav__logo-icon">◆</span>
+                <span>I2R</span>
+            </a>
+
+            <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+
+            <ul class="nav__menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav__link" role="menuitem">Home</a></li>
+                <li role="none"><a href="projects.html" class="nav__link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="about.html" class="nav__link" role="menuitem">About</a></li>
+                <li role="none"><a href="resources.html" class="nav__link" role="menuitem">Resources</a></li>
+                <li role="none"><a href="contact.html" class="nav__link nav__link--active" role="menuitem">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav__overlay" aria-hidden="true"></div>
+    </nav>
+
+    <main id="main">
+        <!-- Page Header -->
+        <header class="page-header">
+            <div class="container">
+                <h1><span class="gradient-text">Get in Touch</span></h1>
+                <p>Have a question, want to collaborate, or just want to say hi? I'd love to hear from you!</p>
+            </div>
+        </header>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid reveal-on-scroll">
+                    <!-- Contact Form -->
+                    <div class="contact-form" role="form" aria-label="Contact form">
+                        <h2 style="margin-bottom: 0.5rem;">Send a Message</h2>
+                        <p style="margin-bottom: 2rem; color: var(--text-muted);">
+                            Fill out the form below and I'll get back to you as soon as I can.
+                        </p>
+
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe"
+                                    required aria-required="true">
+                                <span class="form-error">Please enter your name</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input"
+                                    placeholder="you@example.com" required aria-required="true">
+                                <span class="form-error">Please enter a valid email address</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="type" class="form-label">What's this about?</label>
+                                <select id="type" name="type" class="form-select">
+                                    <option value="general">General Question</option>
+                                    <option value="collaboration">Collaboration Opportunity</option>
+                                    <option value="project">Project Help</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="hello">Just Saying Hi!</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message *</label>
+                                <textarea id="message" name="message" class="form-textarea"
+                                    placeholder="Tell me what's on your mind..." required
+                                    aria-required="true"></textarea>
+                                <span class="form-error">Please enter your message</span>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary" style="width: 100%;">
+                                Send Message
+                                <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                                </svg>
+                            </button>
+
+                            <p class="form-note">
+                                <strong>Note:</strong> This form is for demonstration purposes.
+                                For now, please reach out via social media or email directly.
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h3>Other Ways to Connect</h3>
+                        <p>
+                            I'm most active on YouTube and Instagram. Feel free to reach out
+                            through any of these channels!
+                        </p>
+
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg>
+                            </div>
+                            <div class="contact-info__text">
+                                <strong>Response Time</strong>
+                                <span>Usually within 24-48 hours</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="contact-info__text">
+                                <strong>Location</strong>
+                                <span>Earth, Milky Way Galaxy 🌍</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <path d="M22 6l-10 7L2 6" />
+                                </svg>
+                            </div>
+                            <div class="contact-info__text">
+                                <strong>Best Way to Reach</strong>
+                                <span>YouTube comments or Instagram DMs</span>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="contact-social">
+                            <h4>Find Me On</h4>
+                            <div class="social-links">
+                                <a href="https://youtube.com/@Ideas2RealityWithVK" class="social-link"
+                                    aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                    </svg>
+                                </a>
+                                <a href="https://instagram.com/ideas2reality_vk" class="social-link"
+                                    aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/Ideas2RealityWithVK" class="social-link" aria-label="GitHub"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section section" aria-labelledby="faq-heading">
+            <div class="container">
+                <h2 id="faq-heading" class="text-center mb-xl reveal-on-scroll">Frequently Asked Questions</h2>
+
+                <div class="faq-list reveal-on-scroll">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Can I use your code in my projects?
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Absolutely! Most of my project code is available on GitHub for learning purposes.
+                                Feel free to use it, modify it, and build upon it. Just remember to learn from it,
+                                not just copy-paste — that's where the real value is. A credit or mention would
+                                be appreciated but isn't required.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you offer mentoring or coaching?
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Not officially yet, but it's something I'm working on. For now, I try to help
+                                as much as I can through YouTube comments and social media. Keep an eye on the
+                                Resources page for updates on future mentoring options!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Can we collaborate on a project?
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                I'm always open to interesting collaboration ideas! The best way to propose
+                                something is to send me a message with a clear description of your project,
+                                what you're trying to achieve, and how you think we could work together.
+                                I can't say yes to everything, but I love hearing about cool projects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What's the best way to get started with Arduino/ESP32?
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Start with a simple project that solves a real problem for you — not just
+                                following tutorials. Get an Arduino or ESP32 starter kit, blink some LEDs,
+                                then immediately try to build something you actually want. That's where the
+                                real learning happens. Check out my YouTube channel and Resources page for
+                                beginner-friendly guides!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="nav__logo">
+                        <span class="nav__logo-icon">◆</span>
+                        <span>Ideas2RealityWithVK</span>
+                    </a>
+                    <p>Turning ideas into reality, one project at a time.</p>
+                </div>
+
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer__social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://youtube.com/@Ideas2RealityWithVK" class="social-link" aria-label="YouTube"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/ideas2reality_vk" class="social-link" aria-label="Instagram"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Ideas2RealityWithVK" class="social-link" aria-label="GitHub"
+                            target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Ideas2RealityWithVK. All rights reserved.</p>
+                <p>Built with 💙 and lots of curiosity</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
