@@ -73,12 +73,6 @@
                         </p>
 
                         <form id="contactForm" novalidate>
-                            <!-- Web3Forms access key (get yours free at https://web3forms.com) -->
-                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                            <input type="hidden" name="subject" value="New message from Portfolio Contact Form">
-                            <input type="hidden" name="from_name" value="Ideas2RealityWithVK Portfolio">
-                            <!-- Honeypot spam protection -->
-                            <input type="checkbox" name="botcheck" style="display:none;">
 
                             <div class="form-group">
                                 <label for="name" class="form-label">Your Name *</label>
@@ -358,22 +352,32 @@
     <!-- Scripts -->
     <script src="js/main.js"></script>
     <script>
-        // Web3Forms contact form submission
-        const form = document.getElementById('contactForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const btnText = document.getElementById('btnText');
-        const btnIcon = document.getElementById('btnIcon');
+        // Google Forms contact form submission (no-cors, responses stored in Google Sheets)
+        const FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSeRcrpltpP4eRexrWxpAIkPJW0SbrcjSo765Ec-jOwP29eRNQ/formResponse';
+        const ENTRY = {
+            name:    'entry.155630238',
+            email:   'entry.45742907',
+            type:    'entry.1677794794',
+            message: 'entry.497922772'
+        };
+
+        const form       = document.getElementById('contactForm');
+        const submitBtn  = document.getElementById('submitBtn');
+        const btnText    = document.getElementById('btnText');
+        const btnIcon    = document.getElementById('btnIcon');
         const successMsg = document.getElementById('formSuccess');
-        const errorMsg = document.getElementById('formError');
+        const errorMsg   = document.getElementById('formError');
 
         form.addEventListener('submit', async function (e) {
             e.preventDefault();
 
-            // Basic validation
+            // Validate required fields
             let valid = true;
             form.querySelectorAll('[required]').forEach(field => {
                 const group = field.closest('.form-group');
-                if (!field.value.trim() || (field.type === 'email' && !field.value.includes('@'))) {
+                const isEmpty = !field.value.trim();
+                const badEmail = field.type === 'email' && !field.value.includes('@');
+                if (isEmpty || badEmail) {
                     group && group.classList.add('has-error');
                     valid = false;
                 } else {
@@ -389,24 +393,27 @@
             successMsg.style.display = 'none';
             errorMsg.style.display = 'none';
 
-            try {
-                const data = new FormData(form);
-                const response = await fetch('https://api.web3forms.com/submit', {
-                    method: 'POST',
-                    body: data
-                });
-                const result = await response.json();
+            // Build Google Forms payload
+            const body = new URLSearchParams();
+            body.append(ENTRY.name,    document.getElementById('name').value);
+            body.append(ENTRY.email,   document.getElementById('email').value);
+            body.append(ENTRY.type,    document.getElementById('type').value);
+            body.append(ENTRY.message, document.getElementById('message').value);
 
-                if (result.success) {
-                    successMsg.style.display = 'block';
-                    form.reset();
-                } else {
-                    errorMsg.style.display = 'block';
-                    console.error('Web3Forms error:', result);
-                }
+            try {
+                // no-cors: request goes through, response is opaque (we can't read it, but data IS saved)
+                await fetch(FORM_ACTION, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: body.toString()
+                });
+                // With no-cors we always treat as success if no network error
+                successMsg.style.display = 'block';
+                form.reset();
             } catch (err) {
                 errorMsg.style.display = 'block';
-                console.error('Fetch error:', err);
+                console.error('Submission error:', err);
             } finally {
                 submitBtn.disabled = false;
                 btnText.textContent = 'Send Message';
