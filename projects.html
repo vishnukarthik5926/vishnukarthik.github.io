@@ -67,160 +67,195 @@
             <div class="container">
                 <div class="grid grid--2 reveal-stagger reveal-on-scroll">
 
-                    <!-- Project 1: CAMOS Satellite Simulator -->
-                    <article id="camos" class="card project-card">
-                        <div class="project-card__icon">🛰️</div>
-                        <h3 class="project-card__title">CAMOS Satellite Simulator</h3>
+                    <!-- Project 1: CubiSense -->
+                    <article id="cubisense" class="card project-card">
+                        <div class="project-card__icon">🧊</div>
+                        <h3 class="project-card__title">CubiSense — AI-Powered Desk Companion</h3>
                         <p class="project-card__description">
-                            A comprehensive dual-MCU simulation system for spacecraft operations.
-                            Built with STM32 as the main flight computer and ESP32 modules for
-                            satellite and ground station simulation. Features fault detection,
-                            isolation, and recovery (FDIR) logic, OLED telemetry display, and
-                            real-time serial communication between boards.
+                            A custom-built standalone hardware device with an onboard microphone, battery,
+                            and USB charging. Connects to cloud AI for real-time voice-activated responses
+                            — no laptop or phone required. Acts as a fully autonomous smart desk companion.
                         </p>
                         <div class="project-card__tech">
-                            <span class="tech-badge">STM32</span>
                             <span class="tech-badge">ESP32</span>
-                            <span class="tech-badge">C</span>
-                            <span class="tech-badge">MicroPython</span>
-                            <span class="tech-badge">MQTT</span>
-                            <span class="tech-badge">I2C</span>
+                            <span class="tech-badge">Cloud AI APIs</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Custom Hardware</span>
                         </div>
                         <div class="project-card__footer">
-                            <span class="status-badge status-badge--progress">In Progress</span>
+                            <span class="status-badge status-badge--progress">Ongoing</span>
                         </div>
                         <div class="mt-lg">
-                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I
-                                Learned:</h4>
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">Features:</h4>
                             <p style="font-size: 0.875rem; color: var(--text-dim);">
-                                Multi-board communication, UART/I2C protocols, FDIR design patterns,
-                                and the complexity of real-time embedded systems.
+                                Built-in Pomodoro timer, stopwatch, touch-enabled mini games with buzzer feedback.
+                                Designed for zero-dependency desk AI access — fully standalone hardware product.
                             </p>
                         </div>
                     </article>
 
-                    <!-- Project 2: TARA AI Assistant -->
-                    <article id="tara" class="card project-card">
-                        <div class="project-card__icon">🤖</div>
-                        <h3 class="project-card__title">TARA AI Assistant</h3>
+                    <!-- Project 2: Vehicle Event Recorder -->
+                    <article id="vehicle" class="card project-card">
+                        <div class="project-card__icon">🚗</div>
+                        <h3 class="project-card__title">Vehicle Event Recorder &amp; Emergency Alert System</h3>
                         <p class="project-card__description">
-                            A multi-layout AI assistant with cyberpunk-themed interfaces.
-                            Features voice command recognition, modular skill system, and
-                            multiple dashboard layouts. Built with Python backend and a
-                            responsive web frontend that can switch between different
-                            visual themes dynamically.
+                            Crash detection system with multi-tier impact classification. Automatically
+                            triggers 4G SMS and emergency call alerts with live GPS coordinates to
+                            registered contacts upon a collision event.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-badge">IMU / Gyro</span>
+                            <span class="tech-badge">GPS</span>
+                            <span class="tech-badge">SIM 4G</span>
+                            <span class="tech-badge">Multi-Sensor</span>
+                        </div>
+                        <div class="project-card__footer">
+                            <span class="status-badge status-badge--progress">Active Development</span>
+                        </div>
+                        <div class="mt-lg">
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">Features:</h4>
+                            <p style="font-size: 0.875rem; color: var(--text-dim);">
+                                Alcohol sensor for pre-drive safety monitoring. All trip and event data logged
+                                onboard for insurance and forensic review. Phases complete, more features actively in development.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Gesture-Controlled Wi-Fi Robot -->
+                    <article id="gesture-robot" class="card project-card">
+                        <div class="project-card__icon">🤖</div>
+                        <h3 class="project-card__title">Gesture-Controlled Wi-Fi Robot</h3>
+                        <p class="project-card__description">
+                            A 4-servo robot controlled entirely by hand gestures — no controller, no buttons.
+                            Real-time hand gesture recognition via laptop webcam provides touchless,
+                            low-latency Wi-Fi control over the robot.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-badge">ESP8266</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">OpenCV</span>
+                            <span class="tech-badge">Wi-Fi</span>
+                        </div>
+                        <div class="project-card__footer">
+                            <span class="status-badge status-badge--completed">Completed</span>
+                        </div>
+                        <div class="mt-lg">
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I Learned:</h4>
+                            <p style="font-size: 0.875rem; color: var(--text-dim);">
+                                Computer vision integration with hardware, Wi-Fi communication for real-time control,
+                                and building touchless human-machine interfaces.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Universal RF Transmitter + Mecanum Vehicle -->
+                    <article id="mecanum" class="card project-card">
+                        <div class="project-card__icon">🎮</div>
+                        <h3 class="project-card__title">Universal RF Transmitter + Mecanum Wheel Vehicle</h3>
+                        <p class="project-card__description">
+                            An omnidirectional mecanum-drive vehicle with a custom-fabricated transmitter
+                            (PVC casing, dual-axis joysticks). The transmitter works as a universal gamepad
+                            supporting Wi-Fi, Bluetooth, and 2.4 GHz RF simultaneously.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-badge">ESP32</span>
+                            <span class="tech-badge">NRF24L01</span>
+                            <span class="tech-badge">Bluetooth</span>
+                            <span class="tech-badge">Wi-Fi</span>
+                        </div>
+                        <div class="project-card__footer">
+                            <span class="status-badge status-badge--completed">Completed</span>
+                        </div>
+                        <div class="mt-lg">
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I Learned:</h4>
+                            <p style="font-size: 0.875rem; color: var(--text-dim);">
+                                Multi-protocol wireless control, mecanum drive kinematics, PVC mechanical fabrication,
+                                and designing universal hardware controllers.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: TARA AI Assistant -->
+                    <article id="tara" class="card project-card">
+                        <div class="project-card__icon">🧠</div>
+                        <h3 class="project-card__title">TARA — Hybrid AI Desktop Assistant</h3>
+                        <p class="project-card__description">
+                            A hybrid AI assistant combining offline local intelligence with cloud AI fallback
+                            for always-on capability. Handles OS-level automation — app launch, file management,
+                            system power control — via modular skill pipeline architecture.
                         </p>
                         <div class="project-card__tech">
                             <span class="tech-badge">Python</span>
-                            <span class="tech-badge">JavaScript</span>
-                            <span class="tech-badge">HTML/CSS</span>
-                            <span class="tech-badge">WebSocket</span>
-                            <span class="tech-badge">STT/TTS</span>
+                            <span class="tech-badge">OpenRouter</span>
+                            <span class="tech-badge">Local LLM</span>
+                            <span class="tech-badge">Cloud AI APIs</span>
                         </div>
                         <div class="project-card__footer">
-                            <span class="status-badge status-badge--progress">In Progress</span>
+                            <span class="status-badge status-badge--progress">V1 Complete — Ongoing</span>
                         </div>
                         <div class="mt-lg">
-                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I
-                                Learned:</h4>
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I Learned:</h4>
                             <p style="font-size: 0.875rem; color: var(--text-dim);">
-                                Speech recognition integration, real-time websocket communication,
-                                modular architecture design, and creating immersive UI experiences.
+                                Hybrid AI architecture design, OS-level automation, modular skill pipelines,
+                                and building AI systems that work offline and online seamlessly.
                             </p>
                         </div>
                     </article>
 
-                    <!-- Project 3: Smart Home Dashboard -->
-                    <article id="smarthome" class="card project-card">
-                        <div class="project-card__icon">🏠</div>
-                        <h3 class="project-card__title">Smart Home Dashboard</h3>
+                    <!-- Project 6: CanSat / IN-SPACe -->
+                    <article id="cansat" class="card project-card">
+                        <div class="project-card__icon">🛰️</div>
+                        <h3 class="project-card__title">CanSat Payload &amp; Telemetry — IN-SPACe Rocketry</h3>
                         <p class="project-card__description">
-                            An ESP32-based sensor network with a real-time web dashboard
-                            for home monitoring. Collects temperature, humidity, and motion
-                            data from multiple nodes. Features device control capabilities
-                            and data logging for historical analysis.
+                            Designing a CanSat payload for 1 km altitude deployment with parachute-based
+                            safe recovery system. Part of India's premier nationally recognised student
+                            rocketry challenge run by IN-SPACe.
                         </p>
                         <div class="project-card__tech">
-                            <span class="tech-badge">ESP32</span>
-                            <span class="tech-badge">MQTT</span>
-                            <span class="tech-badge">HTML/CSS/JS</span>
-                            <span class="tech-badge">DHT22</span>
-                            <span class="tech-badge">PIR</span>
+                            <span class="tech-badge">Embedded Systems</span>
+                            <span class="tech-badge">RF Telemetry</span>
+                            <span class="tech-badge">Sensors</span>
+                            <span class="tech-badge">Aerospace</span>
                         </div>
                         <div class="project-card__footer">
-                            <span class="status-badge status-badge--completed">Completed</span>
+                            <span class="status-badge status-badge--progress">Ongoing — CDR Submitted</span>
                         </div>
                         <div class="mt-lg">
-                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I
-                                Learned:</h4>
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">Status:</h4>
                             <p style="font-size: 0.875rem; color: var(--text-dim);">
-                                MQTT protocol, sensor integration, real-time data visualization,
-                                and building responsive dashboards that work across devices.
+                                PDR completed. CDR submitted and currently under national evaluation.
+                                Selected team out of nationwide applicants for this prestigious challenge.
                             </p>
                         </div>
                     </article>
 
-                    <!-- Project 4: Line Following Robot -->
-                    <article id="linefollower" class="card project-card">
-                        <div class="project-card__icon">🤖</div>
-                        <h3 class="project-card__title">Line Following Robot</h3>
-                        <p class="project-card__description">
-                            An autonomous robot built with Arduino that follows black lines
-                            on white surfaces. Uses an array of IR sensors for line detection
-                            and implements PID control for smooth cornering. Features
-                            adjustable speed and sensitivity settings.
-                        </p>
-                        <div class="project-card__tech">
-                            <span class="tech-badge">Arduino</span>
-                            <span class="tech-badge">C++</span>
-                            <span class="tech-badge">IR Sensors</span>
-                            <span class="tech-badge">PID Control</span>
-                            <span class="tech-badge">L298N</span>
-                        </div>
-                        <div class="project-card__footer">
-                            <span class="status-badge status-badge--completed">Completed</span>
-                        </div>
-                        <div class="mt-lg">
-                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I
-                                Learned:</h4>
-                            <p style="font-size: 0.875rem; color: var(--text-dim);">
-                                PID control theory, motor driver circuits, sensor calibration,
-                                and the iterative process of tuning autonomous systems.
-                            </p>
-                        </div>
-                    </article>
-
-                    <!-- Project 5: Weather Station -->
+                    <!-- Project 7: Smart Weather Monitoring -->
                     <article id="weather" class="card project-card">
                         <div class="project-card__icon">🌦️</div>
-                        <h3 class="project-card__title">Personal Weather Station</h3>
+                        <h3 class="project-card__title">Smart Weather Monitoring &amp; Prediction System</h3>
                         <p class="project-card__description">
-                            A multi-sensor weather monitoring system that collects atmospheric
-                            data including temperature, humidity, pressure, and light levels.
-                            Data is logged to cloud platforms for remote access and historical
-                            trend analysis.
+                            A multi-sensor weather monitoring system with local environmental data prediction.
+                            Achieved ~95% prediction accuracy on local conditions. Built as a team project
+                            during VFSTR Engineering Day.
                         </p>
                         <div class="project-card__tech">
                             <span class="tech-badge">ESP32</span>
-                            <span class="tech-badge">BME280</span>
-                            <span class="tech-badge">BH1750</span>
-                            <span class="tech-badge">ThingSpeak</span>
-                            <span class="tech-badge">C++</span>
+                            <span class="tech-badge">DHT Sensors</span>
+                            <span class="tech-badge">Data Analysis</span>
                         </div>
                         <div class="project-card__footer">
-                            <span class="status-badge status-badge--completed">Completed</span>
+                            <span class="status-badge status-badge--completed">Completed — Team</span>
                         </div>
                         <div class="mt-lg">
-                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I
-                                Learned:</h4>
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">Achievement:</h4>
                             <p style="font-size: 0.875rem; color: var(--text-dim);">
-                                Cloud IoT platforms, sensor fusion, data visualization APIs,
-                                and power management for always-on devices.
+                                🏆 <strong>1st Prize</strong> — VFSTR Engineering Day Project Expo (2024).
+                                Hardware integration, calibration, and debugging contributions.
                             </p>
                         </div>
                     </article>
 
-                    <!-- Project 6: This Portfolio -->
+                    <!-- Project 8: This Portfolio -->
                     <article id="portfolio" class="card project-card">
                         <div class="project-card__icon">🌐</div>
                         <h3 class="project-card__title">Ideas2RealityWithVK Website</h3>
@@ -237,11 +272,10 @@
                             <span class="tech-badge">GitHub Pages</span>
                         </div>
                         <div class="project-card__footer">
-                            <span class="status-badge status-badge--completed">Completed</span>
+                            <span class="status-badge status-badge--completed">Live</span>
                         </div>
                         <div class="mt-lg">
-                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I
-                                Learned:</h4>
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">What I Learned:</h4>
                             <p style="font-size: 0.875rem; color: var(--text-dim);">
                                 Modern CSS techniques, web accessibility standards, performance
                                 optimization, and the importance of design systems.
@@ -251,6 +285,7 @@
                 </div>
             </div>
         </section>
+
 
         <!-- More Coming Section -->
         <section class="cta-banner section" aria-labelledby="more-heading">

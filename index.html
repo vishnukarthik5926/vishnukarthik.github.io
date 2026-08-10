@@ -101,79 +101,83 @@
         </header>
 
         <div class="grid grid--3 reveal-stagger reveal-on-scroll">
-          <!-- Project 1: CAMOS -->
+          <!-- Project 1: CubiSense -->
+          <article class="card project-card">
+            <div class="project-card__icon">🧊</div>
+            <h3 class="project-card__title">
+              <a href="projects.html#cubisense">CubiSense — AI Desk Companion</a>
+            </h3>
+            <p class="project-card__description">
+              A custom-built ESP32 hardware device with onboard mic, battery, and USB charging.
+              Connects to cloud AI for real-time voice-activated responses — no PC required.
+              Includes Pomodoro timer, stopwatch, and touch mini games.
+            </p>
+            <div class="project-card__tech">
+              <span class="tech-badge">ESP32</span>
+              <span class="tech-badge">Cloud AI APIs</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Hardware</span>
+            </div>
+            <div class="project-card__footer">
+              <span class="status-badge status-badge--progress">Ongoing</span>
+              <a href="projects.html#cubisense" class="card-link">
+                View Details
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Vehicle Event Recorder -->
+          <article class="card project-card">
+            <div class="project-card__icon">🚗</div>
+            <h3 class="project-card__title">
+              <a href="projects.html#vehicle">Vehicle Event Recorder &amp; Emergency Alert</a>
+            </h3>
+            <p class="project-card__description">
+              Crash detection with multi-tier impact classification — auto-triggers 4G SMS
+              and call alerts with live GPS to emergency contacts. Alcohol pre-drive check,
+              onboard data logging for insurance and forensics.
+            </p>
+            <div class="project-card__tech">
+              <span class="tech-badge">IMU</span>
+              <span class="tech-badge">GPS</span>
+              <span class="tech-badge">SIM 4G</span>
+              <span class="tech-badge">Multi-Sensor</span>
+            </div>
+            <div class="project-card__footer">
+              <span class="status-badge status-badge--progress">Active Development</span>
+              <a href="projects.html#vehicle" class="card-link">
+                View Details
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: CanSat / IN-SPACe -->
           <article class="card project-card">
             <div class="project-card__icon">🛰️</div>
             <h3 class="project-card__title">
-              <a href="projects.html#camos">CAMOS Satellite Simulator</a>
+              <a href="projects.html#cansat">CanSat Payload — IN-SPACe Rocketry</a>
             </h3>
             <p class="project-card__description">
-              A dual-MCU simulation system for spacecraft fault detection and recovery.
-              Features OLED display, telemetry, and FDIR logic.
+              Designing a CanSat payload for 1 km altitude deployment with parachute-based
+              safe recovery. PDR completed, CDR submitted and under national evaluation —
+              part of India's premier student rocketry challenge.
             </p>
             <div class="project-card__tech">
-              <span class="tech-badge">STM32</span>
-              <span class="tech-badge">ESP32</span>
-              <span class="tech-badge">C</span>
-              <span class="tech-badge">MQTT</span>
+              <span class="tech-badge">Embedded Systems</span>
+              <span class="tech-badge">RF Telemetry</span>
+              <span class="tech-badge">Sensors</span>
             </div>
             <div class="project-card__footer">
-              <span class="status-badge status-badge--progress">In Progress</span>
-              <a href="projects.html#camos" class="card-link">
-                View Details
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 2: TARA AI -->
-          <article class="card project-card">
-            <div class="project-card__icon">🤖</div>
-            <h3 class="project-card__title">
-              <a href="projects.html#tara">TARA AI Assistant</a>
-            </h3>
-            <p class="project-card__description">
-              Multi-layout cyberpunk-themed AI assistant with voice commands,
-              modular skills system, and customizable interface themes.
-            </p>
-            <div class="project-card__tech">
-              <span class="tech-badge">Python</span>
-              <span class="tech-badge">JavaScript</span>
-              <span class="tech-badge">HTML/CSS</span>
-            </div>
-            <div class="project-card__footer">
-              <span class="status-badge status-badge--progress">In Progress</span>
-              <a href="projects.html#tara" class="card-link">
-                View Details
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 3: Smart Home -->
-          <article class="card project-card">
-            <div class="project-card__icon">🏠</div>
-            <h3 class="project-card__title">
-              <a href="projects.html#smarthome">Smart Home Dashboard</a>
-            </h3>
-            <p class="project-card__description">
-              ESP32-based sensor network with real-time web dashboard.
-              Monitors temperature, humidity, and controls smart devices.
-            </p>
-            <div class="project-card__tech">
-              <span class="tech-badge">ESP32</span>
-              <span class="tech-badge">MQTT</span>
-              <span class="tech-badge">Web</span>
-            </div>
-            <div class="project-card__footer">
-              <span class="status-badge status-badge--completed">Completed</span>
-              <a href="projects.html#smarthome" class="card-link">
+              <span class="status-badge status-badge--progress">Ongoing — CDR Submitted</span>
+              <a href="projects.html#cansat" class="card-link">
                 View Details
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round">
@@ -210,9 +214,9 @@
           <div class="about-preview__text">
             <h2 id="about-heading">About Me</h2>
             <p>
-              I'm <strong>Vishnu Karthik</strong>, a B.Tech 2nd year student who believes
+              I'm <strong>Vishnu Karthik</strong>, a B.Tech 3rd year ECE student (Batch 2024–2028) who believes
               <strong>every idea deserves to become reality</strong>. My journey spans from
-              electronics and embedded systems to AI-powered applications — always learning, always building.
+              embedded systems and IoT hardware to AI-powered applications — always learning, always building.
             </p>
             <p>
               I document everything I learn because <strong>teaching is the best way to learn</strong>.
@@ -222,28 +226,28 @@
 
             <div class="tech-stack">
               <span class="tech-stack__item">
+                <span class="tech-stack__icon">📡</span>
+                ESP32 / STM32
+              </span>
+              <span class="tech-stack__item">
                 <span class="tech-stack__icon">⚡</span>
                 Arduino
-              </span>
-              <span class="tech-stack__item">
-                <span class="tech-stack__icon">📡</span>
-                ESP32
-              </span>
-              <span class="tech-stack__item">
-                <span class="tech-stack__icon">🔧</span>
-                STM32
               </span>
               <span class="tech-stack__item">
                 <span class="tech-stack__icon">🐍</span>
                 Python
               </span>
               <span class="tech-stack__item">
-                <span class="tech-stack__icon">🌐</span>
-                Web Dev
+                <span class="tech-stack__icon">🤖</span>
+                AI APIs
               </span>
               <span class="tech-stack__item">
-                <span class="tech-stack__icon">🤖</span>
-                AI/ML
+                <span class="tech-stack__icon">🛰️</span>
+                Aerospace
+              </span>
+              <span class="tech-stack__item">
+                <span class="tech-stack__icon">🔌</span>
+                IoT / Sensors
               </span>
             </div>
 
