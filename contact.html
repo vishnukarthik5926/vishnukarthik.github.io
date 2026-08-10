@@ -73,6 +73,13 @@
                         </p>
 
                         <form id="contactForm" novalidate>
+                            <!-- Web3Forms access key (get yours free at https://web3forms.com) -->
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                            <input type="hidden" name="subject" value="New message from Portfolio Contact Form">
+                            <input type="hidden" name="from_name" value="Ideas2RealityWithVK Portfolio">
+                            <!-- Honeypot spam protection -->
+                            <input type="checkbox" name="botcheck" style="display:none;">
+
                             <div class="form-group">
                                 <label for="name" class="form-label">Your Name *</label>
                                 <input type="text" id="name" name="name" class="form-input" placeholder="John Doe"
@@ -90,11 +97,11 @@
                             <div class="form-group">
                                 <label for="type" class="form-label">What's this about?</label>
                                 <select id="type" name="type" class="form-select">
-                                    <option value="general">General Question</option>
-                                    <option value="collaboration">Collaboration Opportunity</option>
-                                    <option value="project">Project Help</option>
-                                    <option value="feedback">Feedback</option>
-                                    <option value="hello">Just Saying Hi!</option>
+                                    <option value="General Question">General Question</option>
+                                    <option value="Collaboration Opportunity">Collaboration Opportunity</option>
+                                    <option value="Project Help">Project Help</option>
+                                    <option value="Feedback">Feedback</option>
+                                    <option value="Just Saying Hi!">Just Saying Hi!</option>
                                 </select>
                             </div>
 
@@ -106,19 +113,22 @@
                                 <span class="form-error">Please enter your message</span>
                             </div>
 
-                            <button type="submit" class="btn btn--primary" style="width: 100%;">
-                                Send Message
-                                <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            <button type="submit" id="submitBtn" class="btn btn--primary" style="width: 100%;">
+                                <span id="btnText">Send Message</span>
+                                <svg class="btn__icon" id="btnIcon" width="16" height="16" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round">
                                     <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
                                 </svg>
                             </button>
 
-                            <p class="form-note">
-                                <strong>Note:</strong> This form is for demonstration purposes.
-                                For now, please reach out via social media or email directly.
-                            </p>
+                            <!-- Result messages -->
+                            <div id="formSuccess" style="display:none; margin-top:1rem; padding:1rem; background:rgba(34,197,94,0.15); border:1px solid rgba(34,197,94,0.4); border-radius:8px; color:#4ade80; text-align:center;">
+                                ✅ Message sent! I'll get back to you within 24–48 hours.
+                            </div>
+                            <div id="formError" style="display:none; margin-top:1rem; padding:1rem; background:rgba(239,68,68,0.15); border:1px solid rgba(239,68,68,0.4); border-radius:8px; color:#f87171; text-align:center;">
+                                ❌ Something went wrong. Please try emailing me directly at vishnukarthik6464@gmail.com
+                            </div>
                         </form>
                     </div>
 
@@ -347,6 +357,63 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <script>
+        // Web3Forms contact form submission
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const btnIcon = document.getElementById('btnIcon');
+        const successMsg = document.getElementById('formSuccess');
+        const errorMsg = document.getElementById('formError');
+
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            // Basic validation
+            let valid = true;
+            form.querySelectorAll('[required]').forEach(field => {
+                const group = field.closest('.form-group');
+                if (!field.value.trim() || (field.type === 'email' && !field.value.includes('@'))) {
+                    group && group.classList.add('has-error');
+                    valid = false;
+                } else {
+                    group && group.classList.remove('has-error');
+                }
+            });
+            if (!valid) return;
+
+            // Loading state
+            submitBtn.disabled = true;
+            btnText.textContent = 'Sending...';
+            btnIcon.style.display = 'none';
+            successMsg.style.display = 'none';
+            errorMsg.style.display = 'none';
+
+            try {
+                const data = new FormData(form);
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: data
+                });
+                const result = await response.json();
+
+                if (result.success) {
+                    successMsg.style.display = 'block';
+                    form.reset();
+                } else {
+                    errorMsg.style.display = 'block';
+                    console.error('Web3Forms error:', result);
+                }
+            } catch (err) {
+                errorMsg.style.display = 'block';
+                console.error('Fetch error:', err);
+            } finally {
+                submitBtn.disabled = false;
+                btnText.textContent = 'Send Message';
+                btnIcon.style.display = 'inline';
+            }
+        });
+    </script>
 </body>
 
 </html>
