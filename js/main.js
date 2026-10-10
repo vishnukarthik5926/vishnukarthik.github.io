@@ -244,7 +244,7 @@
       'Embedded Systems Builder ⚡',
       'VFSTR ECE Student & Innovator 🎓',
       'Ideathon & Expo Champion 🏆',
-      'IN-SPACe Rocketry Finalist 🚀',
+      'CanSat & Rocketry Builder 🚀',
       'IoT & Cloud AI Hardware Maker 🤖'
     ];
 
