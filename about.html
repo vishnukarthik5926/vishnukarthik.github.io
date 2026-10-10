@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Get to know Ideas2RealityWithVK - a curious learner turning ideas into real projects with electronics, coding, and AI.">
-    <meta name="keywords" content="about, tech learner, maker, electronics enthusiast, programmer">
+        content="Get to know Vishnu Karthik (Ideas2RealityWithVK) - B.Tech ECE student at VFSTR, hardware engineer, double Ideathon & Expo winner, and CanSat rocketry builder.">
+    <meta name="keywords" content="Vishnu Karthik, Ideas2RealityWithVK, VFSTR, embedded systems, ESP32, STM32, rocketry, IN-SPACe, Ideathon winner">
     <meta name="author" content="Ideas2RealityWithVK">
 
-    <title>About | Ideas2RealityWithVK</title>
+    <title>About Me | Ideas2RealityWithVK</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +23,9 @@
 </head>
 
 <body>
+    <!-- Canvas Particle Background -->
+    <canvas id="bg-canvas"></canvas>
+
     <!-- Skip Link -->
     <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -55,266 +58,474 @@
         <!-- Page Header -->
         <header class="page-header">
             <div class="container">
+                <div class="bento-card__badge bento-card__badge--cyan" style="margin: 0 auto 1rem;">
+                    <span>⚡ MAKER DOSSIER</span>
+                </div>
                 <h1><span class="gradient-text">About Me</span></h1>
-                <p>The story of a curious mind turning ideas into reality</p>
+                <p class="typewriter-text" style="font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; color: var(--accent-primary); min-height: 1.8rem;"></p>
             </div>
         </header>
 
-        <!-- About Intro -->
-        <section class="about-section">
+        <!-- Bento Grid Main Container -->
+        <section class="about-section" style="padding-top: 1rem;">
             <div class="container">
-                <div class="about-preview__content reveal-on-scroll">
-                    <div class="about-preview__image">
-                        <div class="about-preview__image-wrapper">
-                            <div class="about-preview__placeholder" aria-label="Profile picture placeholder">
-                                👨‍💻
+                <div class="bento-grid reveal-on-scroll">
+
+                    <!-- ============================================
+                         BENTO 1: PROFILE HERO CARD (Span 7)
+                         ============================================ -->
+                    <div class="bento-col-7">
+                        <div class="bento-card bento-card--glow" style="height: 100%; justify-content: space-between;">
+                            <div>
+                                <div class="bento-card__badge bento-card__badge--cyan">
+                                    <span>HARDWARE &amp; EMBEDDED ENGINEER</span>
+                                </div>
+
+                                <div class="cyber-avatar-container" style="padding: 0 0 1.5rem 0; align-items: flex-start; text-align: left;">
+                                    <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                                        <!-- Cyber Avatar -->
+                                        <div class="cyber-avatar">
+                                            <div class="cyber-avatar__ring"></div>
+                                            <div class="cyber-avatar__ring cyber-avatar__ring--inner"></div>
+                                            <div class="cyber-avatar__core">
+                                                <span class="cyber-avatar__monogram">VK</span>
+                                                <span class="cyber-avatar__tag">VFSTR ECE</span>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h2 style="font-size: 1.85rem; margin-bottom: 0.25rem;">Vishnu Karthik</h2>
+                                            <p style="font-size: 0.9375rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+                                                B.Tech 3rd Year Electronics &amp; Communication (Batch 2024–2028)
+                                                <br><span style="color: var(--accent-primary);">Vignan University (VFSTR)</span>, Vadlamudi, Guntur
+                                            </p>
+                                            <div class="live-status-pill">
+                                                <span class="pulse-dot"></span>
+                                                <span>Available for Projects &amp; Collaborations</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">
+                                    I believe every idea deserves to become reality. My engineering journey is built on
+                                    the thrill of making physical hardware react intelligently to code—designing custom
+                                    ESP32 &amp; STM32 boards, writing low-latency firmware, integrating cloud AI, and
+                                    competing in national rocketry challenges.
+                                </p>
+                                <p style="font-size: 0.95rem; line-height: 1.7; margin: 0;">
+                                    Through <strong>Ideas2RealityWithVK</strong>, I build in public and share the real
+                                    lessons learned from prototypes, hardware failures, and competition-winning breakthroughs.
+                                </p>
+                            </div>
+
+                            <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                                <a href="projects.html" class="btn btn--primary" style="padding: 0.6rem 1.25rem; font-size: 0.875rem;">
+                                    Explore Projects
+                                </a>
+                                <a href="contact.html" class="btn btn--secondary" style="padding: 0.6rem 1.25rem; font-size: 0.875rem;">
+                                    Get in Touch
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="about-intro">
-                        <p>
-                            <strong>Hi, I'm Vishnu Karthik</strong> — a B.Tech 3rd year ECE student (Batch 2024–2028)
-                            at Vignan Foundation for Science, Technology &amp; Research (VFSTR), Vadlamudi, Guntur.
-                            I believe every idea deserves to become reality. Welcome to my corner of the internet
-                            where I document my journey from concepts to working projects.
-                        </p>
-                        <p>
-                            As a student, I started with <em>curiosity</em> — the kind that makes you wonder
-                            "how does this work?" and "what if I could build that?" That curiosity led me down
-                            a rabbit hole of electronics, embedded systems, artificial intelligence, and web
-                            development.
-                        </p>
-                        <p>
-                            Today, I build things. Some work on the first try. Most don't. But every
-                            failed attempt teaches me something new, and I share those lessons here
-                            because <strong>learning in public</strong> makes the journey more meaningful.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- My Philosophy -->
-        <section class="about-section" style="background: var(--bg-space);">
-            <div class="container container--narrow">
-                <div class="reveal-on-scroll">
-                    <h2 class="text-center mb-xl">My Philosophy</h2>
+                    <!-- ============================================
+                         BENTO 2: LIVE METRICS & IMPACT (Span 5)
+                         ============================================ -->
+                    <div class="bento-col-5">
+                        <div class="bento-card" style="height: 100%;">
+                            <div class="bento-card__badge bento-card__badge--purple">
+                                <span>⚡ VERIFIED METRICS</span>
+                            </div>
 
-                    <div class="grid grid--3 mb-2xl">
-                        <div class="card text-center">
-                            <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔬</div>
-                            <h4 style="margin-bottom: 0.5rem;">Learn by Doing</h4>
-                            <p style="font-size: 0.9rem;">Tutorials can teach theory, but real learning happens when you
-                                build something and break it.</p>
-                        </div>
-                        <div class="card text-center">
-                            <div style="font-size: 2.5rem; margin-bottom: 1rem;">📢</div>
-                            <h4 style="margin-bottom: 0.5rem;">Share the Process</h4>
-                            <p style="font-size: 0.9rem;">Documenting failures is as valuable as showcasing successes.
-                                The journey matters.</p>
-                        </div>
-                        <div class="card text-center">
-                            <div style="font-size: 2.5rem; margin-bottom: 1rem;">🤝</div>
-                            <h4 style="margin-bottom: 0.5rem;">AI as a Partner</h4>
-                            <p style="font-size: 0.9rem;">AI doesn't replace learning — it accelerates it. Use it
-                                wisely, understand deeply.</p>
+                            <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Key Highlights</h3>
+
+                            <div class="stats-bento-grid">
+                                <div class="stat-item">
+                                    <div class="stat-item__number gradient-text" data-target="5+">5+</div>
+                                    <div class="stat-item__label">Major Awards &amp; Ideathons Won</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-item__number gradient-text" data-target="10+">10+</div>
+                                    <div class="stat-item__label">Embedded &amp; IoT Projects</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-item__number gradient-text" data-target="1km">1 km</div>
+                                    <div class="stat-item__label">CanSat Rocketry Altitude</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-item__number gradient-text" data-target="100%">100%</div>
+                                    <div class="stat-item__label">Open-Source &amp; Public Learning</div>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 1.25rem; padding: 0.75rem 1rem; background: rgba(0,255,204,0.06); border: 1px solid rgba(0,255,204,0.15); border-radius: var(--radius-md); font-size: 0.8125rem; color: var(--text-bright);">
+                                💡 <em>"Ideas are only as powerful as the prototypes built to prove them."</em>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- My Journey Timeline -->
-        <section class="about-section">
-            <div class="container container--narrow">
-                <h2 class="text-center mb-xl reveal-on-scroll">My Journey</h2>
+                    <!-- ============================================
+                         BENTO 3: PRESTIGE HONORS & TROPHIES (Span 12)
+                         ============================================ -->
+                    <div class="bento-col-12">
+                        <div class="bento-card bento-card--accent-gold">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem;">
+                                <div class="bento-card__badge bento-card__badge--gold" style="margin-bottom: 0;">
+                                    <span>🏆 HONORS, AWARDS &amp; COMPETITIONS</span>
+                                </div>
+                                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #fbbf24;">
+                                    1ST PRIZE SWEEPS &amp; NATIONAL SELECTIONS
+                                </span>
+                            </div>
 
-                <div class="timeline reveal-on-scroll">
-                    <div class="timeline__item">
-                        <span class="timeline__year">2023</span>
-                        <h3 class="timeline__title">The Spark</h3>
-                        <p class="timeline__description">
-                            Discovered the world of Arduino and electronics. Built first embedded projects,
-                            got completely hooked on hardware and the idea of making physical devices respond to code.
-                        </p>
-                    </div>
+                            <div class="awards-list">
+                                <!-- Award 1: EI Day Double Sweep -->
+                                <div class="award-item">
+                                    <div class="award-item__icon">🏆</div>
+                                    <div class="award-item__content">
+                                        <h4>
+                                            1st Prize — Ideathon &amp; Project Expo (EI Day)
+                                            <span class="award-item__tag">VFSTR 2026 Champion</span>
+                                        </h4>
+                                        <p>
+                                            Achieved a prestigious double victory by winning <strong>1st Prize in both the Ideathon and the Project Exhibition</strong> on EI Day at VFSTR, recognized for engineering design originality, technical viability, and live embedded prototype execution.
+                                        </p>
+                                    </div>
+                                </div>
 
-                    <div class="timeline__item">
-                        <span class="timeline__year">2024</span>
-                        <h3 class="timeline__title">Going Deeper</h3>
-                        <p class="timeline__description">
-                            Moved to ESP32, STM32, and IoT systems. Built a Smart Weather Monitoring system
-                            that won 1st Prize at VFSTR Engineering Day Expo. Joined B.Tech ECE at VFSTR, Guntur.
-                            Won 1st Prize at Space Tech Ideathon. Explored robotics, RF, and sensor fusion.
-                        </p>
-                    </div>
+                                <!-- Award 2: Engineers' Day Double Sweep -->
+                                <div class="award-item">
+                                    <div class="award-item__icon">🥇</div>
+                                    <div class="award-item__content">
+                                        <h4>
+                                            1st Prize — Ideathon &amp; Project Expo (Engineers' Day)
+                                            <span class="award-item__tag">VFSTR 1st Place</span>
+                                        </h4>
+                                        <p>
+                                            Swept <strong>1st Prize in both the Ideathon and Project Expo</strong> at the VFSTR Engineers' Day flagship festival, standing out among multi-disciplinary engineering teams for hardware integration and problem-solving capability.
+                                        </p>
+                                    </div>
+                                </div>
 
-                    <div class="timeline__item">
-                        <span class="timeline__year">2025</span>
-                        <h3 class="timeline__title">AI Integration &amp; Rocketry</h3>
-                        <p class="timeline__description">
-                            Built TARA AI assistant, gesture-controlled robot, and Universal RF + Mecanum vehicle.
-                            Team selected for IN-SPACe National Rocketry Challenge. Started CubiSense hardware project.
-                            Integrated Gemini API, Claude, and OpenRouter into real firmware workflows.
-                        </p>
-                    </div>
+                                <!-- Award 3: IN-SPACe National Rocketry Challenge -->
+                                <div class="award-item">
+                                    <div class="award-item__icon" style="background: rgba(59, 130, 246, 0.15); border-color: rgba(59, 130, 246, 0.3); color: #60a5fa;">🚀</div>
+                                    <div class="award-item__content">
+                                        <h4>
+                                            IN-SPACe National Rocketry Challenge Finalist
+                                            <span class="award-item__tag" style="background: rgba(59, 130, 246, 0.2); color: #60a5fa;">National Selection</span>
+                                        </h4>
+                                        <p>
+                                            Team selected for India's prestigious national student rocketry challenge. Successfully designed the <strong>CanSat Payload</strong> for 1 km altitude deployment with telemetry data logging and parachute-based safe recovery. Preliminary Design Review (PDR) completed, Critical Design Review (CDR) submitted.
+                                        </p>
+                                    </div>
+                                </div>
 
-                    <div class="timeline__item">
-                        <span class="timeline__year">2026</span>
-                        <h3 class="timeline__title">Ideas2RealityWithVK</h3>
-                        <p class="timeline__description">
-                            Launched Ideas2RealityWithVK while in 3rd year. Building in public, advancing
-                            the Vehicle Event Recorder, pushing the CanSat CDR for IN-SPACe, and
-                            connecting with fellow makers and builders around the world.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="skills-section section">
-            <div class="container">
-                <h2 class="text-center mb-xl reveal-on-scroll">Technologies I Work With</h2>
-
-                <div class="skills-grid reveal-stagger reveal-on-scroll">
-                    <!-- Microcontrollers -->
-                    <div class="skill-item">
-                        <span class="skill-item__icon">📡</span>
-                        <span class="skill-item__name">ESP32 / ESP8266</span>
-                        <span class="skill-item__level">Proficient</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__icon">⚡</span>
-                        <span class="skill-item__name">Arduino (Uno/Nano/Mega)</span>
-                        <span class="skill-item__level">Proficient</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__icon">🔧</span>
-                        <span class="skill-item__name">STM32</span>
-                        <span class="skill-item__level">Comfortable</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__icon">🍑</span>
-                        <span class="skill-item__name">Raspberry Pi Pico</span>
-                        <span class="skill-item__level">Learning</span>
-                    </div>
-                    <!-- Programming -->
-                    <div class="skill-item">
-                        <span class="skill-item__icon">🐍</span>
-                        <span class="skill-item__name">Python</span>
-                        <span class="skill-item__level">Comfortable</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__icon">💻</span>
-                        <span class="skill-item__name">C / Embedded C</span>
-                        <span class="skill-item__level">Comfortable</span>
-                    </div>
-                    <!-- Communication Protocols -->
-                    <div class="skill-item">
-                        <span class="skill-item__icon">🌐</span>
-                        <span class="skill-item__name">Wi-Fi / HTTP / REST</span>
-                        <span class="skill-item__level">Proficient</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__icon">📡</span>
-                        <span class="skill-item__name">Bluetooth / BLE</span>
-                        <span class="skill-item__level">Comfortable</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__icon">📨</span>
-                        <span class="skill-item__name">MQTT / I²C / SPI / UART</span>
-                        <span class="skill-item__level">Comfortable</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__icon">📶</span>
-                        <span class="skill-item__name">SIM / 4G Cellular</span>
-                        <span class="skill-item__level">Comfortable</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__icon">📶</span>
-                        <span class="skill-item__name">NRF24L01 (2.4 GHz RF)</span>
-                        <span class="skill-item__level">Comfortable</span>
-                    </div>
-                    <!-- Sensors -->
-                    <div class="skill-item">
-                        <span class="skill-item__icon">🔌</span>
-                        <span class="skill-item__name">IMU / GPS / Gas / Env Sensors</span>
-                        <span class="skill-item__level">Proficient</span>
-                    </div>
-                    <!-- AI Tools -->
-                    <div class="skill-item">
-                        <span class="skill-item__icon">🤖</span>
-                        <span class="skill-item__name">Gemini API / Claude / OpenRouter</span>
-                        <span class="skill-item__level">Comfortable</span>
-                    </div>
-                    <!-- Tools / IDEs -->
-                    <div class="skill-item">
-                        <span class="skill-item__icon">🛠️</span>
-                        <span class="skill-item__name">VS Code / Arduino IDE / STM32CubeIDE</span>
-                        <span class="skill-item__level">Comfortable</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__icon">🔬</span>
-                        <span class="skill-item__name">MATLAB / Simulink / ANSYS</span>
-                        <span class="skill-item__level">Learning</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__icon">💻</span>
-                        <span class="skill-item__name">Wokwi / TinkerCAD / EasyEDA</span>
-                        <span class="skill-item__level">Comfortable</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-item__icon">📐</span>
-                        <span class="skill-item__name">PCB Design (KiCad)</span>
-                        <span class="skill-item__level">Learning</span>
-                    </div>
-                    <!-- Fabrication -->
-                    <div class="skill-item">
-                        <span class="skill-item__icon">🔧</span>
-                        <span class="skill-item__name">Hardware Assembly &amp; Fabrication</span>
-                        <span class="skill-item__level">Proficient</span>
-                    </div>
-                </div>
-
-                <p class="text-center mt-2xl" style="color: var(--text-dim); font-size: 0.875rem;">
-                    "Proficient" = built real projects with it. "Comfortable" = regular hands-on use.
-                    "Learning" = actively studying and experimenting. Honest skill levels, no fluff.
-                </p>
-            </div>
-        </section>
-
-        <!-- Beyond Code -->
-        <section class="about-section" style="background: var(--bg-space);">
-            <div class="container container--narrow">
-                <div class="reveal-on-scroll">
-                    <h2 class="text-center mb-xl">Beyond the Code</h2>
-
-                    <div class="text-center">
-                        <p style="font-size: 1.125rem; margin-bottom: 1.5rem;">
-                            When I'm not debugging or soldering, you'll find me:
-                        </p>
-                        <div class="flex flex--center flex--gap-lg" style="flex-wrap: wrap;">
-                            <span class="tech-stack__item">⚽ Playing football</span>
-                            <span class="tech-stack__item">🏸 Badminton</span>
-                            <span class="tech-stack__item">🚀 Space &amp; aerospace enthusiast</span>
-                            <span class="tech-stack__item">🎮 Gaming occasionally</span>
-                            <span class="tech-stack__item">🔊 Listening to lo-fi</span>
-                            <span class="tech-stack__item">📚 Reading tech blogs</span>
+                                <!-- Award 4: Space Tech Ideathon & Weather System -->
+                                <div class="award-item">
+                                    <div class="award-item__icon">🌟</div>
+                                    <div class="award-item__content">
+                                        <h4>
+                                            1st Prize — Space Tech Ideathon &amp; Expo Awards
+                                            <span class="award-item__tag">State / University Level</span>
+                                        </h4>
+                                        <p>
+                                            Won 1st Prize at the Space Tech Ideathon for sensor telemetry innovation, following 1st Prize recognition for the Smart IoT Weather Monitoring System at the VFSTR Engineering Expo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- ============================================
+                         BENTO 4: INTERACTIVE SKILLS MATRIX (Span 8)
+                         ============================================ -->
+                    <div class="bento-col-8">
+                        <div class="bento-card" style="height: 100%;">
+                            <div class="bento-card__badge bento-card__badge--cyan">
+                                <span>🛠️ TECHNICAL PROFICIENCY MATRIX</span>
+                            </div>
+
+                            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Technologies &amp; Systems</h3>
+
+                            <!-- Filter Tabs -->
+                            <div class="skill-tabs-nav">
+                                <button type="button" class="skill-tab-btn active" data-filter="all">All Systems</button>
+                                <button type="button" class="skill-tab-btn" data-filter="mcu">Microcontrollers &amp; IoT</button>
+                                <button type="button" class="skill-tab-btn" data-filter="software">Code &amp; Firmware</button>
+                                <button type="button" class="skill-tab-btn" data-filter="comms">Protocols &amp; RF</button>
+                                <button type="button" class="skill-tab-btn" data-filter="ai">AI &amp; Cloud</button>
+                            </div>
+
+                            <!-- Skills Grid -->
+                            <div class="skill-cards-grid">
+                                <!-- MCU 1 -->
+                                <div class="skill-bar-card" data-category="mcu">
+                                    <div class="skill-bar-card__header">
+                                        <span class="skill-bar-card__title">📡 ESP32 &amp; ESP8266</span>
+                                        <span class="skill-bar-card__badge">Proficient</span>
+                                    </div>
+                                    <div class="skill-progress-track">
+                                        <div class="skill-progress-bar" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+
+                                <!-- MCU 2 -->
+                                <div class="skill-bar-card" data-category="mcu">
+                                    <div class="skill-bar-card__header">
+                                        <span class="skill-bar-card__title">⚡ Arduino (Uno/Nano)</span>
+                                        <span class="skill-bar-card__badge">Proficient</span>
+                                    </div>
+                                    <div class="skill-progress-track">
+                                        <div class="skill-progress-bar" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+
+                                <!-- MCU 3 -->
+                                <div class="skill-bar-card" data-category="mcu">
+                                    <div class="skill-bar-card__header">
+                                        <span class="skill-bar-card__title">🔧 STM32 &amp; ARM</span>
+                                        <span class="skill-bar-card__badge">Comfortable</span>
+                                    </div>
+                                    <div class="skill-progress-track">
+                                        <div class="skill-progress-bar" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+
+                                <!-- MCU 4 -->
+                                <div class="skill-bar-card" data-category="mcu">
+                                    <div class="skill-bar-card__header">
+                                        <span class="skill-bar-card__title">🍑 Raspberry Pi Pico</span>
+                                        <span class="skill-bar-card__badge">Comfortable</span>
+                                    </div>
+                                    <div class="skill-progress-track">
+                                        <div class="skill-progress-bar" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Software 1 -->
+                                <div class="skill-bar-card" data-category="software">
+                                    <div class="skill-bar-card__header">
+                                        <span class="skill-bar-card__title">💻 Embedded C / C++</span>
+                                        <span class="skill-bar-card__badge">Comfortable</span>
+                                    </div>
+                                    <div class="skill-progress-track">
+                                        <div class="skill-progress-bar" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Software 2 -->
+                                <div class="skill-bar-card" data-category="software">
+                                    <div class="skill-bar-card__header">
+                                        <span class="skill-bar-card__title">🐍 Python &amp; Automation</span>
+                                        <span class="skill-bar-card__badge">Comfortable</span>
+                                    </div>
+                                    <div class="skill-progress-track">
+                                        <div class="skill-progress-bar" style="width: 82%;"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Comms 1 -->
+                                <div class="skill-bar-card" data-category="comms">
+                                    <div class="skill-bar-card__header">
+                                        <span class="skill-bar-card__title">🌐 Wi-Fi, BLE &amp; MQTT</span>
+                                        <span class="skill-bar-card__badge">Proficient</span>
+                                    </div>
+                                    <div class="skill-progress-track">
+                                        <div class="skill-progress-bar" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Comms 2 -->
+                                <div class="skill-bar-card" data-category="comms">
+                                    <div class="skill-bar-card__header">
+                                        <span class="skill-bar-card__title">📶 SIM 4G &amp; NRF24L01 RF</span>
+                                        <span class="skill-bar-card__badge">Comfortable</span>
+                                    </div>
+                                    <div class="skill-progress-track">
+                                        <div class="skill-progress-bar" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+
+                                <!-- AI 1 -->
+                                <div class="skill-bar-card" data-category="ai">
+                                    <div class="skill-bar-card__header">
+                                        <span class="skill-bar-card__title">🤖 Gemini &amp; Claude APIs</span>
+                                        <span class="skill-bar-card__badge">Comfortable</span>
+                                    </div>
+                                    <div class="skill-progress-track">
+                                        <div class="skill-progress-bar" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+
+                                <!-- AI 2 -->
+                                <div class="skill-bar-card" data-category="ai">
+                                    <div class="skill-bar-card__header">
+                                        <span class="skill-bar-card__title">🔌 Sensor Fusion &amp; GPS</span>
+                                        <span class="skill-bar-card__badge">Proficient</span>
+                                    </div>
+                                    <div class="skill-progress-track">
+                                        <div class="skill-progress-bar" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ============================================
+                         BENTO 5: PHILOSOPHY CARD (Span 4)
+                         ============================================ -->
+                    <div class="bento-col-4">
+                        <div class="bento-card" style="height: 100%; justify-content: space-between;">
+                            <div>
+                                <div class="bento-card__badge bento-card__badge--purple">
+                                    <span>🧠 CORE PHILOSOPHY</span>
+                                </div>
+
+                                <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 0.5rem;">
+                                    <div>
+                                        <h4 style="font-size: 1rem; color: var(--accent-primary); margin-bottom: 0.25rem;">
+                                            🔬 Build, Break, Learn
+                                        </h4>
+                                        <p style="font-size: 0.85rem; line-height: 1.5; margin: 0;">
+                                            Datasheets and theory are essential, but true mastery comes from holding soldering irons, diagnosing oscilloscopes, and fixing bugs.
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <h4 style="font-size: 1rem; color: #a78bfa; margin-bottom: 0.25rem;">
+                                            📢 Build in Public
+                                        </h4>
+                                        <p style="font-size: 0.85rem; line-height: 1.5; margin: 0;">
+                                            Sharing debugging hurdles openly connects you with kindred makers and creates real value for others on the same path.
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <h4 style="font-size: 1rem; color: #38bdf8; margin-bottom: 0.25rem;">
+                                            🤝 AI as a Co-Pilot
+                                        </h4>
+                                        <p style="font-size: 0.85rem; line-height: 1.5; margin: 0;">
+                                            Leveraging LLMs and modern AI tools accelerates firmware iteration and PCB review, freeing up time for high-level creative architecture.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 1.5rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1rem;">
+                                <span style="font-size: 0.8rem; color: var(--text-dim); font-family: 'JetBrains Mono', monospace;">
+                                    &lt;turning_ideas_into_reality&gt;
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ============================================
+                         BENTO 6: JOURNEY TIMELINE (Span 8)
+                         ============================================ -->
+                    <div class="bento-col-8">
+                        <div class="bento-card">
+                            <div class="bento-card__badge bento-card__badge--cyan">
+                                <span>📅 MILESTONE TIMELINE</span>
+                            </div>
+
+                            <h3 style="font-size: 1.25rem; margin-bottom: 1.25rem;">The Engineering Evolution</h3>
+
+                            <div class="timeline" style="margin-top: 0.5rem;">
+                                <div class="timeline__item">
+                                    <span class="timeline__year">2023</span>
+                                    <h4 class="timeline__title">The Spark &amp; First Boards</h4>
+                                    <p class="timeline__description">
+                                        Discovered the magic of microcontrollers with the Arduino Uno. Built first robotic chassis, blinking LEDs, and simple sensor alarms. Hooked on hardware instantly.
+                                    </p>
+                                </div>
+
+                                <div class="timeline__item">
+                                    <span class="timeline__year">2024</span>
+                                    <h4 class="timeline__title">IoT, STM32 &amp; University Honors</h4>
+                                    <p class="timeline__description">
+                                        Joined B.Tech ECE at VFSTR, Guntur. Designed the Smart IoT Weather Monitoring System (1st Prize @ VFSTR Engineering Expo). Won 1st Prize at Space Tech Ideathon. Deepened skills in STM32CubeIDE and RF.
+                                    </p>
+                                </div>
+
+                                <div class="timeline__item">
+                                    <span class="timeline__year">2025</span>
+                                    <h4 class="timeline__title">Rocketry &amp; Autonomous AI Devices</h4>
+                                    <p class="timeline__description">
+                                        Team selected for the <strong>IN-SPACe National Rocketry Challenge</strong> (designed 1 km CanSat telemetry). Built CubiSense standalone ESP32 voice desk companion and gesture-controlled rover.
+                                    </p>
+                                </div>
+
+                                <div class="timeline__item">
+                                    <span class="timeline__year">2026</span>
+                                    <h4 class="timeline__title">Double Ideathon Sweeps &amp; Ideas2Reality</h4>
+                                    <p class="timeline__description">
+                                        Swept <strong>1st Prize in both Ideathon &amp; Project Expo on EI Day</strong>, followed by another <strong>1st Prize sweep on Engineers' Day</strong>. Finalizing CanSat CDR evaluations and advancing the Vehicle Event Recorder.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ============================================
+                         BENTO 7: BEYOND THE WORKBENCH (Span 4)
+                         ============================================ -->
+                    <div class="bento-col-4">
+                        <div class="bento-card" style="height: 100%; justify-content: space-between;">
+                            <div>
+                                <div class="bento-card__badge bento-card__badge--gold">
+                                    <span>🎯 BEYOND THE BENCH</span>
+                                </div>
+
+                                <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">When Not Soldering</h3>
+
+                                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 0.8rem; background: rgba(255,255,255,0.03); border-radius: var(--radius-md);">
+                                        <span style="font-size: 1.25rem;">⚽</span>
+                                        <span style="font-size: 0.875rem;">Competitive Football</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 0.8rem; background: rgba(255,255,255,0.03); border-radius: var(--radius-md);">
+                                        <span style="font-size: 1.25rem;">🏸</span>
+                                        <span style="font-size: 0.875rem;">Badminton Matches</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 0.8rem; background: rgba(255,255,255,0.03); border-radius: var(--radius-md);">
+                                        <span style="font-size: 1.25rem;">🚀</span>
+                                        <span style="font-size: 0.875rem;">ISRO &amp; Deep Space Missions</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 0.8rem; background: rgba(255,255,255,0.03); border-radius: var(--radius-md);">
+                                        <span style="font-size: 1.25rem;">🎧</span>
+                                        <span style="font-size: 0.875rem;">Lo-Fi Beats &amp; Firmware Coding</span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 0.8rem; background: rgba(255,255,255,0.03); border-radius: var(--radius-md);">
+                                        <span style="font-size: 1.25rem;">🎮</span>
+                                        <span style="font-size: 0.875rem;">Occasional Tactical Gaming</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 1.5rem; text-align: center;">
+                                <a href="contact.html" class="btn btn--primary" style="width: 100%; font-size: 0.875rem;">
+                                    Connect With Me
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- CTA -->
+        <!-- CTA Banner -->
         <section class="cta-banner section">
             <div class="container">
                 <div class="cta-banner__content reveal-on-scroll">
-                    <h2>Want to Connect?</h2>
+                    <h2>Ready to Build Something Awesome?</h2>
                     <p>
-                        Whether you want to collaborate, ask a question, or just say hi —
-                        I'd love to hear from you.
+                        Whether you want to discuss CanSat rocketry, collaborate on an embedded project,
+                        or invite me to your next hackathon team — let's connect!
                     </p>
                     <a href="contact.html" class="btn btn--primary">
                         Get in Touch
@@ -357,22 +568,19 @@
                         <a href="https://youtube.com/@Ideas2RealityWithVK" class="social-link" aria-label="YouTube"
                             target="_blank" rel="noopener noreferrer">
                             <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                             </svg>
                         </a>
                         <a href="https://instagram.com/ideas2reality_vk" class="social-link" aria-label="Instagram"
                             target="_blank" rel="noopener noreferrer">
                             <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
                             </svg>
                         </a>
-                        <a href="https://github.com/Ideas2RealityWithVK" class="social-link" aria-label="GitHub"
+                        <a href="https://github.com/vishnukarthik5926" class="social-link" aria-label="GitHub"
                             target="_blank" rel="noopener noreferrer">
                             <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
                             </svg>
                         </a>
                     </div>
@@ -381,13 +589,13 @@
 
             <div class="footer__bottom">
                 <p>&copy; 2026 Ideas2RealityWithVK. All rights reserved.</p>
-                <p>Built with 💙 and lots of curiosity</p>
+                <p>Designed with Bento Grid &amp; Cybercore aesthetics</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=3"></script>
 </body>
 
 </html>

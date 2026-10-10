@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Ideas2RealityWithVK - Learner turning ideas into real projects with a little help from AI. Science, DIY, coding & more.">
-  <meta name="keywords" content="tech portfolio, DIY projects, coding, electronics, Arduino, ESP32, AI, learning">
+    content="Ideas2RealityWithVK - Hardware and embedded systems portfolio of Vishnu Karthik (VFSTR ECE). Double Ideathon Winner, CanSat Rocketry Finalist, and maker.">
+  <meta name="keywords" content="tech portfolio, Vishnu Karthik, VFSTR, embedded systems, Arduino, ESP32, STM32, CanSat, IN-SPACe, AI, Ideathon winner">
   <meta name="author" content="Ideas2RealityWithVK">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Ideas2RealityWithVK - Tech Portfolio">
-  <meta property="og:description" content="Learner turning ideas into real projects with a little help from AI.">
+  <meta property="og:title" content="Ideas2RealityWithVK | Tech & Hardware Portfolio">
+  <meta property="og:description" content="Turning ideas into reality with electronics, firmware, and AI.">
   <meta property="og:type" content="website">
 
   <title>Ideas2RealityWithVK | Tech Portfolio</title>
@@ -28,6 +28,9 @@
 </head>
 
 <body>
+  <!-- Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
   <!-- Skip Link -->
   <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -64,14 +67,22 @@
       <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
 
       <div class="container hero__content">
+        <div class="bento-card__badge bento-card__badge--cyan" style="margin: 0 auto 1rem;">
+          <span>⚡ B.TECH ECE @ VFSTR (2024–2028)</span>
+        </div>
         <span class="hero__greeting">Hi, I'm Vishnu Karthik</span>
         <h1 class="hero__title">
           <span class="gradient-text">Ideas2RealityWithVK</span>
         </h1>
+        
+        <!-- Interactive Typewriter Subtitle -->
+        <p class="typewriter-text" style="font-family: 'JetBrains Mono', monospace; font-size: 1.15rem; color: var(--accent-primary); margin: 0.5rem auto 1.25rem; min-height: 1.8rem;"></p>
+
         <p class="hero__tagline">
-          Learner turning ideas into real projects with a little help from AI.
-          Science, DIY, coding & more — join my tech journey!
+          Turning ideas into physical prototypes with embedded systems, low-level firmware, and cloud AI.
+          Double Ideathon &amp; Expo Champion, CanSat builder, and passionate maker.
         </p>
+
         <div class="hero__cta">
           <a href="projects.html" class="btn btn--primary">
             View Projects
@@ -92,25 +103,48 @@
       </div>
     </section>
 
+    <!-- Awards Ticker / Highlight Banner -->
+    <section style="padding: 1rem 0; background: rgba(15, 15, 26, 0.7); border-y: 1px solid rgba(255, 255, 255, 0.08);">
+      <div class="container">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; text-align: center;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span>🏆</span>
+            <span style="font-size: 0.85rem; font-weight: 600; color: #fbbf24;">1st Prize Ideathon &amp; Expo @ EI Day</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span>🥇</span>
+            <span style="font-size: 0.85rem; font-weight: 600; color: #fbbf24;">1st Prize Ideathon &amp; Expo @ Engineers' Day</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span>🚀</span>
+            <span style="font-size: 0.85rem; font-weight: 600; color: #60a5fa;">IN-SPACe National Rocketry Finalist</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Featured Projects Section -->
     <section class="section" aria-labelledby="featured-heading">
       <div class="container">
         <header class="section-header">
-          <h2 id="featured-heading">Featured Projects</h2>
-          <p>A selection of things I've built while learning and experimenting</p>
+          <div class="bento-card__badge bento-card__badge--cyan" style="margin: 0 auto 0.75rem;">
+            <span>PORTFOLIO SHOWCASE</span>
+          </div>
+          <h2 id="featured-heading">Featured Engineering Projects</h2>
+          <p>Real hardware systems engineered from schematic to working firmware</p>
         </header>
 
         <div class="grid grid--3 reveal-stagger reveal-on-scroll">
           <!-- Project 1: CubiSense -->
-          <article class="card project-card">
+          <article class="card project-card bento-card">
             <div class="project-card__icon">🧊</div>
             <h3 class="project-card__title">
               <a href="projects.html#cubisense">CubiSense — AI Desk Companion</a>
             </h3>
             <p class="project-card__description">
               A custom-built ESP32 hardware device with onboard mic, battery, and USB charging.
-              Connects to cloud AI for real-time voice-activated responses — no PC required.
-              Includes Pomodoro timer, stopwatch, and touch mini games.
+              Connects to cloud AI for real-time voice-activated responses without needing a laptop.
+              Includes Pomodoro timer, stopwatch, and capacitive touch games.
             </p>
             <div class="project-card__tech">
               <span class="tech-badge">ESP32</span>
@@ -131,15 +165,15 @@
           </article>
 
           <!-- Project 2: Vehicle Event Recorder -->
-          <article class="card project-card">
+          <article class="card project-card bento-card">
             <div class="project-card__icon">🚗</div>
             <h3 class="project-card__title">
-              <a href="projects.html#vehicle">Vehicle Event Recorder &amp; Emergency Alert</a>
+              <a href="projects.html#vehicle">Vehicle Event Recorder &amp; Alert System</a>
             </h3>
             <p class="project-card__description">
               Crash detection with multi-tier impact classification — auto-triggers 4G SMS
-              and call alerts with live GPS to emergency contacts. Alcohol pre-drive check,
-              onboard data logging for insurance and forensics.
+              and call alerts with live GPS to emergency contacts. Includes alcohol pre-drive check
+              and onboard blackbox data logging for forensics.
             </p>
             <div class="project-card__tech">
               <span class="tech-badge">IMU</span>
@@ -160,7 +194,7 @@
           </article>
 
           <!-- Project 3: CanSat / IN-SPACe -->
-          <article class="card project-card">
+          <article class="card project-card bento-card">
             <div class="project-card__icon">🛰️</div>
             <h3 class="project-card__title">
               <a href="projects.html#cansat">CanSat Payload — IN-SPACe Rocketry</a>
@@ -176,7 +210,7 @@
               <span class="tech-badge">Sensors</span>
             </div>
             <div class="project-card__footer">
-              <span class="status-badge status-badge--progress">Ongoing — CDR Submitted</span>
+              <span class="status-badge status-badge--progress">CDR Submitted</span>
               <a href="projects.html#cansat" class="card-link">
                 View Details
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -200,64 +234,61 @@
       </div>
     </section>
 
-    <!-- About Preview Section -->
+    <!-- About Preview Bento Section -->
     <section class="about-preview section" aria-labelledby="about-heading">
       <div class="container">
-        <div class="about-preview__content reveal-on-scroll">
-          <div class="about-preview__image">
-            <div class="about-preview__image-wrapper">
-              <div class="about-preview__placeholder" aria-label="Profile picture placeholder">
-                👨‍💻
+        <div class="bento-card bento-card--glow reveal-on-scroll" style="padding: 2.5rem 2rem;">
+          <div class="about-preview__content" style="align-items: center;">
+            <div class="about-preview__image" style="flex-shrink: 0;">
+              <!-- Cyber Avatar -->
+              <div class="cyber-avatar" style="margin: 0 auto;">
+                <div class="cyber-avatar__ring"></div>
+                <div class="cyber-avatar__ring cyber-avatar__ring--inner"></div>
+                <div class="cyber-avatar__core">
+                  <span class="cyber-avatar__monogram">VK</span>
+                  <span class="cyber-avatar__tag">VFSTR ECE</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="about-preview__text">
-            <h2 id="about-heading">About Me</h2>
-            <p>
-              I'm <strong>Vishnu Karthik</strong>, a B.Tech 3rd year ECE student (Batch 2024–2028) who believes
-              <strong>every idea deserves to become reality</strong>. My journey spans from
-              embedded systems and IoT hardware to AI-powered applications — always learning, always building.
-            </p>
-            <p>
-              I document everything I learn because <strong>teaching is the best way to learn</strong>.
-              Whether it's debugging an STM32 or training a machine learning model,
-              I share the process — failures included.
-            </p>
 
-            <div class="tech-stack">
-              <span class="tech-stack__item">
-                <span class="tech-stack__icon">📡</span>
-                ESP32 / STM32
-              </span>
-              <span class="tech-stack__item">
-                <span class="tech-stack__icon">⚡</span>
-                Arduino
-              </span>
-              <span class="tech-stack__item">
-                <span class="tech-stack__icon">🐍</span>
-                Python
-              </span>
-              <span class="tech-stack__item">
-                <span class="tech-stack__icon">🤖</span>
-                AI APIs
-              </span>
-              <span class="tech-stack__item">
-                <span class="tech-stack__icon">🛰️</span>
-                Aerospace
-              </span>
-              <span class="tech-stack__item">
-                <span class="tech-stack__icon">🔌</span>
-                IoT / Sensors
-              </span>
+            <div class="about-preview__text">
+              <div class="live-status-pill mb-sm">
+                <span class="pulse-dot"></span>
+                <span>Open for Collaboration</span>
+              </div>
+              <h2 id="about-heading" style="margin-bottom: 0.75rem;">About Vishnu Karthik</h2>
+              <p>
+                I'm a B.Tech 3rd year ECE student (Batch 2024–2028) at VFSTR, Guntur.
+                I bridge the gap between abstract code and physical circuits—turning concepts into working
+                firmware, telemetry stations, and autonomous AI gadgets.
+              </p>
+              <p>
+                Recently swept <strong>1st Prize in both Ideathon &amp; Project Expo on EI Day</strong> as well
+                as <strong>Engineers' Day</strong>, and competing nationally in the <strong>IN-SPACe Rocketry Challenge</strong>.
+              </p>
+
+              <div class="tech-stack" style="margin: 1.25rem 0;">
+                <span class="tech-stack__item">📡 ESP32 &amp; STM32</span>
+                <span class="tech-stack__item">⚡ Arduino</span>
+                <span class="tech-stack__item">💻 Embedded C / C++</span>
+                <span class="tech-stack__item">🐍 Python</span>
+                <span class="tech-stack__item">🚀 CanSat Rocketry</span>
+                <span class="tech-stack__item">🤖 Gemini &amp; Claude AI</span>
+              </div>
+
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="about.html" class="btn btn--primary">
+                  Read Full Story &amp; Honors
+                  <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a href="contact.html" class="btn btn--secondary">
+                  Quick Message
+                </a>
+              </div>
             </div>
-
-            <a href="about.html" class="btn btn--primary mt-lg">
-              Read My Story
-              <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </a>
           </div>
         </div>
       </div>
@@ -269,8 +300,8 @@
         <div class="cta-banner__content reveal-on-scroll">
           <h2 id="cta-heading">Let's Build Something Together</h2>
           <p>
-            Have an idea? Want to collaborate? Or just chat about tech?
-            I'm always excited to connect with fellow makers and learners.
+            Have an idea for a project? Want to team up for a hackathon or ideathon?
+            Drop me a line anytime!
           </p>
           <a href="contact.html" class="btn btn--primary">
             Get in Touch
@@ -324,7 +355,7 @@
                   d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
               </svg>
             </a>
-            <a href="https://github.com/Ideas2RealityWithVK" class="social-link" aria-label="GitHub" target="_blank"
+            <a href="https://github.com/vishnukarthik5926" class="social-link" aria-label="GitHub" target="_blank"
               rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path
@@ -337,13 +368,13 @@
 
       <div class="footer__bottom">
         <p>&copy; 2026 Ideas2RealityWithVK. All rights reserved.</p>
-        <p>Built with 💙 and lots of curiosity</p>
+        <p>Built with Bento Grid &amp; Cybercore aesthetics</p>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 
 </html>
